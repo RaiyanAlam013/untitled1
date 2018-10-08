@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="@localhost [2]">
+  <database-model serializer="dbm" rdbms="ORACLE" format-version="4.11">
+    <root id="1">
+      <ServerVersion>11.2.0.2</ServerVersion>
+    </root>
+    <schema id="2" parent="1" name="TEST">
+      <ObjectId>51</ObjectId>
+      <IntrospectionTimestamp>2018-10-09.01:16:38</IntrospectionTimestamp>
+      <CreatedTimestamp>2018-10-09.01:15:54</CreatedTimestamp>
+      <ModifiedTimestamp>2018-10-09.01:15:54</ModifiedTimestamp>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="PUBLIC">
+      <ObjectId>1</ObjectId>
+    </schema>
+    <schema id="4" parent="1" name="SYS">
+      <ObjectId>0</ObjectId>
+    </schema>
+    <schema id="5" parent="1" name="SYSTEM">
+      <ObjectId>5</ObjectId>
+    </schema>
+    <schema id="6" parent="1" name="OUTLN">
+      <ObjectId>9</ObjectId>
+    </schema>
+    <schema id="7" parent="1" name="DIP">
+      <ObjectId>14</ObjectId>
+    </schema>
+    <schema id="8" parent="1" name="ORACLE_OCM">
+      <ObjectId>21</ObjectId>
+    </schema>
+    <schema id="9" parent="1" name="DBSNMP">
+      <ObjectId>29</ObjectId>
+    </schema>
+    <schema id="10" parent="1" name="APPQOSSYS">
+      <ObjectId>30</ObjectId>
+    </schema>
+    <schema id="11" parent="1" name="CTXSYS">
+      <ObjectId>32</ObjectId>
+    </schema>
+    <schema id="12" parent="1" name="XDB">
+      <ObjectId>34</ObjectId>
+    </schema>
+    <schema id="13" parent="1" name="ANONYMOUS">
+      <ObjectId>35</ObjectId>
+    </schema>
+    <schema id="14" parent="1" name="MDSYS">
+      <ObjectId>42</ObjectId>
+    </schema>
+    <schema id="15" parent="1" name="HR">
+      <ObjectId>43</ObjectId>
+    </schema>
+    <schema id="16" parent="1" name="FLOWS_FILES">
+      <ObjectId>44</ObjectId>
+    </schema>
+    <schema id="17" parent="1" name="APEX_PUBLIC_USER">
+      <ObjectId>45</ObjectId>
+    </schema>
+    <schema id="18" parent="1" name="APEX_040000">
+      <ObjectId>47</ObjectId>
+    </schema>
+    <schema id="19" parent="1" name="SRPS">
+      <ObjectId>50</ObjectId>
+    </schema>
+    <schema id="20" parent="1" name="XS$NULL">
+      <ObjectId>2147483638</ObjectId>
+    </schema>
+    <table id="21" parent="2" name="COURSES">
+      <ObjectId>20116</ObjectId>
+      <CreatedTimestamp>2018-10-09.01:15:54</CreatedTimestamp>
+      <ModifiedTimestamp>2018-10-09.01:15:54</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="22" parent="2" name="DEPT">
+      <ObjectId>20112</ObjectId>
+      <CreatedTimestamp>2018-10-09.01:15:54</CreatedTimestamp>
+      <ModifiedTimestamp>2018-10-09.01:15:54</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="23" parent="2" name="MARKS">
+      <ObjectId>20120</ObjectId>
+      <CreatedTimestamp>2018-10-09.01:15:54</CreatedTimestamp>
+      <ModifiedTimestamp>2018-10-09.01:15:54</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="24" parent="2" name="STUDENT">
+      <ObjectId>20118</ObjectId>
+      <CreatedTimestamp>2018-10-09.01:15:54</CreatedTimestamp>
+      <ModifiedTimestamp>2018-10-09.01:15:54</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="25" parent="2" name="TEACHER">
+      <ObjectId>20114</ObjectId>
+      <CreatedTimestamp>2018-10-09.01:15:54</CreatedTimestamp>
+      <ModifiedTimestamp>2018-10-09.01:15:54</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <view id="26" parent="2" name="STD_MARKS_DETAILS">
+      <ObjectId>20121</ObjectId>
+      <SourceTextLength>223</SourceTextLength>
+      <DependsOnIds>20116,20118,20120</DependsOnIds>
+      <CreatedTimestamp>2018-10-09.01:15:54</CreatedTimestamp>
+      <ModifiedTimestamp>2018-10-09.01:15:54</ModifiedTimestamp>
+      <Modifiable>1</Modifiable>
+    </view>
+    <column id="27" parent="21" name="C_ID">
+      <Position>1</Position>
+      <DataType>VARCHAR2(20 byte)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="28" parent="21" name="C_TITLE">
+      <Position>2</Position>
+      <DataType>VARCHAR2(50 byte)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="29" parent="21" name="C_DEPT">
+      <Position>3</Position>
+      <DataType>VARCHAR2(20 byte)|0s</DataType>
+    </column>
+    <column id="30" parent="21" name="C_CREDIT">
+      <Position>4</Position>
+      <DataType>NUMBER(3,2 digit)|0s</DataType>
+      <DefaultExpression>NULL
+</DefaultExpression>
+    </column>
+    <index id="31" parent="21" name="SYS_C007106">
+      <ObjectId>20117</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2018-10-09.01:15:54</CreatedTimestamp>
+      <ModifiedTimestamp>2018-10-09.01:15:54</ModifiedTimestamp>
+      <TablespaceName>SYSTEM</TablespaceName>
+      <ColNames>C_ID</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="32" parent="21" name="SYS_C007106">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2018-10-09.01:15:54</ModifiedTimestamp>
+      <ColNames>C_ID</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C007106</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="33" parent="21" name="COURSES_DEPT_DEPT_NAME_FK">
+      <ModifiedTimestamp>2018-10-09.01:15:54</ModifiedTimestamp>
+      <ColNames>C_DEPT</ColNames>
+      <RefSchemaName>TEST</RefSchemaName>
+      <RefTableName>DEPT</RefTableName>
+      <RefKeyName>SYS_C007099</RefKeyName>
+      <OnDelete>cascade</OnDelete>
+    </foreign-key>
+    <column id="34" parent="22" name="DEPT_NAME">
+      <Position>1</Position>
+      <DataType>VARCHAR2(20 byte)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="35" parent="22" name="BULIDING">
+      <Position>2</Position>
+      <DataType>VARCHAR2(10 byte)|0s</DataType>
+    </column>
+    <index id="36" parent="22" name="SYS_C007099">
+      <ObjectId>20113</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2018-10-09.01:15:54</CreatedTimestamp>
+      <ModifiedTimestamp>2018-10-09.01:15:54</ModifiedTimestamp>
+      <TablespaceName>SYSTEM</TablespaceName>
+      <ColNames>DEPT_NAME</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="37" parent="22" name="SYS_C007099">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2018-10-09.01:15:54</ModifiedTimestamp>
+      <ColNames>DEPT_NAME</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C007099</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="38" parent="23" name="M_SID">
+      <Position>1</Position>
+      <DataType>NUMBER(*)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="39" parent="23" name="M_DEPT">
+      <Position>2</Position>
+      <DataType>VARCHAR2(20 byte)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="40" parent="23" name="M_CID">
+      <Position>3</Position>
+      <DataType>VARCHAR2(20 byte)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="41" parent="23" name="MIDEXAM">
+      <Position>4</Position>
+      <DataType>FLOAT(*)|0s</DataType>
+    </column>
+    <column id="42" parent="23" name="FINALEXAM">
+      <Position>5</Position>
+      <DataType>FLOAT(*)|0s</DataType>
+    </column>
+    <foreign-key id="43" parent="23" name="MARKS_STUDENT_S_ID_FK">
+      <ModifiedTimestamp>2018-10-09.01:15:54</ModifiedTimestamp>
+      <ColNames>M_SID</ColNames>
+      <RefSchemaName>TEST</RefSchemaName>
+      <RefTableName>STUDENT</RefTableName>
+      <RefKeyName>SYS_C007110</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <foreign-key id="44" parent="23" name="MARKS_DEPT_DEPT_NAME_FK">
+      <ModifiedTimestamp>2018-10-09.01:15:54</ModifiedTimestamp>
+      <ColNames>M_DEPT</ColNames>
+      <RefSchemaName>TEST</RefSchemaName>
+      <RefTableName>DEPT</RefTableName>
+      <RefKeyName>SYS_C007099</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <foreign-key id="45" parent="23" name="MARKS_COURSES_C_ID_FK">
+      <ModifiedTimestamp>2018-10-09.01:15:54</ModifiedTimestamp>
+      <ColNames>M_CID</ColNames>
+      <RefSchemaName>TEST</RefSchemaName>
+      <RefTableName>COURSES</RefTableName>
+      <RefKeyName>SYS_C007106</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <column id="46" parent="24" name="S_ID">
+      <Position>1</Position>
+      <DataType>NUMBER(*)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="47" parent="24" name="S_NAME">
+      <Position>2</Position>
+      <DataType>VARCHAR2(100 byte)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="48" parent="24" name="S_DEPT">
+      <Position>3</Position>
+      <DataType>VARCHAR2(20 byte)|0s</DataType>
+    </column>
+    <column id="49" parent="24" name="S_ADDRESS">
+      <Position>4</Position>
+      <DataType>VARCHAR2(100 byte)|0s</DataType>
+    </column>
+    <column id="50" parent="24" name="S_CONTACT">
+      <Position>5</Position>
+      <DataType>VARCHAR2(15 byte)|0s</DataType>
+    </column>
+    <index id="51" parent="24" name="SYS_C007110">
+      <ObjectId>20119</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2018-10-09.01:15:54</CreatedTimestamp>
+      <ModifiedTimestamp>2018-10-09.01:15:54</ModifiedTimestamp>
+      <TablespaceName>SYSTEM</TablespaceName>
+      <ColNames>S_ID</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="52" parent="24" name="SYS_C007110">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2018-10-09.01:15:54</ModifiedTimestamp>
+      <ColNames>S_ID</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C007110</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="53" parent="24" name="STUDENT_DEPT__DEPT_NAME_FK">
+      <ModifiedTimestamp>2018-10-09.01:15:54</ModifiedTimestamp>
+      <ColNames>S_DEPT</ColNames>
+      <RefSchemaName>TEST</RefSchemaName>
+      <RefTableName>DEPT</RefTableName>
+      <RefKeyName>SYS_C007099</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <column id="54" parent="25" name="T_ID">
+      <Position>1</Position>
+      <DataType>NUMBER(*)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="55" parent="25" name="T_NAME">
+      <Position>2</Position>
+      <DataType>VARCHAR2(100 byte)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="56" parent="25" name="T_DEPT">
+      <Position>3</Position>
+      <DataType>VARCHAR2(20 byte)|0s</DataType>
+    </column>
+    <column id="57" parent="25" name="T_ADDRESS">
+      <Position>4</Position>
+      <DataType>VARCHAR2(100 byte)|0s</DataType>
+    </column>
+    <column id="58" parent="25" name="T_CONTACT">
+      <Position>5</Position>
+      <DataType>VARCHAR2(15 byte)|0s</DataType>
+    </column>
+    <index id="59" parent="25" name="SYS_C007102">
+      <ObjectId>20115</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2018-10-09.01:15:54</CreatedTimestamp>
+      <ModifiedTimestamp>2018-10-09.01:15:54</ModifiedTimestamp>
+      <TablespaceName>SYSTEM</TablespaceName>
+      <ColNames>T_ID</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="60" parent="25" name="SYS_C007102">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2018-10-09.01:15:54</ModifiedTimestamp>
+      <ColNames>T_ID</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C007102</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="61" parent="25" name="TEACHER_DEPT__DEPT_NAME_FK">
+      <ModifiedTimestamp>2018-10-09.01:15:54</ModifiedTimestamp>
+      <ColNames>T_DEPT</ColNames>
+      <RefSchemaName>TEST</RefSchemaName>
+      <RefTableName>DEPT</RefTableName>
+      <RefKeyName>SYS_C007099</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <column id="62" parent="26" name="STUDENT_ID">
+      <Position>1</Position>
+      <DataType>NUMBER(*)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="63" parent="26" name="STUDENT_NAME">
+      <Position>2</Position>
+      <DataType>VARCHAR2(100 byte)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="64" parent="26" name="COURSE_ID">
+      <Position>3</Position>
+      <DataType>VARCHAR2(20 byte)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="65" parent="26" name="COURSE_NAME">
+      <Position>4</Position>
+      <DataType>VARCHAR2(50 byte)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="66" parent="26" name="MIDEXAM">
+      <Position>5</Position>
+      <DataType>FLOAT(*)|0s</DataType>
+    </column>
+    <column id="67" parent="26" name="FINALEXAM">
+      <Position>6</Position>
+      <DataType>FLOAT(*)|0s</DataType>
+    </column>
+  </database-model>
+</dataSource>

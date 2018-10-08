@@ -117,7 +117,7 @@ public class dbase {
 
     public int insertStudent(String s_id, String s_name, String s_dept, String s_address, String s_contact )
     {
-        query = String.format("INSERT INTO STUDENT VALUES (%s, \'%s\' , \'%s\' , \'%s\' , \'%s\')", s_id, s_name, s_dept, s_address, s_contact);
+        query = String.format("INSERT INTO STUDENT VALUES (\'%s\', \'%s\' , \'%s\' , \'%s\' , \'%s\')", s_id, s_name, s_dept, s_address, s_contact);
         Integer count1 = getCount();
         if (count1 != null) return count1;
         return -1;

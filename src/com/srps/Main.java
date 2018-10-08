@@ -24,7 +24,7 @@ public class Main {
          * imported class from dbase.java
          */
 
-        //dbase DataBaseConnectionCheck = new dbase("SRPS", "hello123");
+        //dbase DataBaseConnectionCheck = new dbase("TEST", "test");
         ResultSet rs; // for showing a table
 
      /*   try {

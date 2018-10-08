@@ -46,7 +46,15 @@ public class TeacherInsertFormPanel extends JPanel {
                 String Course =CourseField.getText();
                 String Mid=MidExamField.getText();
                 String Final=FinalExamField.getText();
-                database.insertMarks(ID,Dept,Course,Mid,Final);
+                int save = database.insertMarks(ID,Dept,Course,Mid,Final);
+                if(save==-1)
+                {
+                    JOptionPane.showMessageDialog(TeacherInsertFormPanel.this,"Save Failed");
+                }
+                else
+                {
+                    JOptionPane.showMessageDialog(TeacherInsertFormPanel.this,"Saved Successfully");
+                }
                 FormEvent ev = new FormEvent(this,ID, Dept);
                 if(FormListener !=null)
                 {

@@ -46,7 +46,7 @@ public class TeacherFormPanel extends  JPanel{
                 }
                 else if(Choice=="S")
                 {
-
+                    SwingUtilities.invokeLater(new Runnable() {public void run() { new TeacherShowFormMainframe(database); }});
                 }
             }
         });
