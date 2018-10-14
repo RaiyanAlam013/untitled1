@@ -12,7 +12,7 @@ public class FormPanel extends JPanel {
     private JLabel IDLevel;
     private JLabel PasswordLevel;
     private JTextField IDField;
-    private JTextField PasswordField;
+    private JPasswordField PasswordField;
     private JButton okBtn;
     private com.srps.gui.FormEventListener FormListener;
     public FormPanel(){
@@ -24,7 +24,7 @@ public class FormPanel extends JPanel {
         IDLevel =new JLabel("ID: ");
         PasswordLevel =new JLabel("Password: ");
         IDField =new JTextField(10);
-        PasswordField =new JTextField(10);
+        PasswordField =new JPasswordField(10);
         //PasswordField.setEchoChar('*');
         okBtn=new JButton("Login");
         okBtn.addActionListener(new ActionListener() {
